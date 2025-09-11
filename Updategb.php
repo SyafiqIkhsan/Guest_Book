@@ -1,4 +1,7 @@
 <?php
+include_once('templates/header.php')
+?>
+<?php
 require_once('koneksi.php');
 $id = $_GET['id'];
 $data = mysqli_query($conn, "SELECT * FROM bukutamu WHERE id='$id'");
@@ -38,3 +41,6 @@ if (isset($_POST['update'])) {
   </form>
 </body>
 </html>
+<?php
+include_once('templates/footer.php')
+?>
