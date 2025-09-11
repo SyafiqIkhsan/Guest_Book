@@ -16,7 +16,6 @@
       <label for="nama">Nama Tamu</label>
       <input type="text" name="nama" id="nama">
     </div>
-    <br>
     <div>
       <label for="alamat">Alamat</label>
       <input type="text" name="alamat" id="alamat">
