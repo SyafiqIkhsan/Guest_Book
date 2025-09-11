@@ -22,7 +22,7 @@
     </div>
     <div>
       <label for="email">Email</label>
-      <input type="email" name="email" id="email">
+      <input type="text" name="email" id="email">
     </div>
     <button type="submit" name="tambah" id="tambah">Tambah data</button>
     <a href="readgb.php">Kembali ke tabel</a>
