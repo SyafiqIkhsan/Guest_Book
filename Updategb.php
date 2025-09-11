@@ -31,7 +31,7 @@ if (isset($_POST['update'])) {
     </div>
     <div>
       <label for="email">Email</label>
-      <input type="text" name="email" value="<?php echo $guest['Email']; ?>">
+      <input type="email" name="email" value="<?php echo $guest['Email']; ?>">
     </div>
     <button type="submit" name="update">Update</button>
     <a href="readgb.php">Kembali</a>
