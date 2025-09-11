@@ -19,7 +19,10 @@ include_once('templates/header.php')
       <th>No.</th>
       <th>Nama</th>
       <th>Alamat</th>
-      <th>Email</th>
+      <th>Tanggal</th>
+      <th>No. Hp</th>
+      <th>Bertemu</th>
+      <th>Kepentingan</th>
       <th>Action</th>
     </tr>
   <?php
@@ -33,7 +36,10 @@ include_once('templates/header.php')
       <td><?php echo $no++; ?></td>
       <td><?php echo $guest['Nama']?></td>
       <td><?php echo $guest['Alamat']?></td>
-      <td><?php echo $guest['Email']?></td>
+      <td><?php echo $guest['Tanggal']?></td>
+      <td><?php echo $guest['no_hp']?></td>
+      <td><?php echo $guest['bertemu']?></td>
+      <td><?php echo $guest['kepentingan']?></td>
       <td>
           <a href="Updategb.php?id=<?php echo $guest['Id']?>">Edit</a> |
           <a href="readgb.php?hapus=<?php echo $guest['Id']?>" name="hapus" onclick="return confirm('Yakin hapus?')">Hapus</a>
