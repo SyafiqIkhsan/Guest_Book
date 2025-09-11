@@ -1,3 +1,6 @@
+<?php
+include_once('templates/header.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +50,15 @@ if (isset($_GET['hapus'])) {
 }
 ?>
   </table>
-  <small><a href="Creategb.php">TAMBAH DATA</a></small>
+  <div>
+    <small><a href="Creategb.php">TAMBAH DATA</a></small>
+  </div>
+  <div>
+    <small><a href="index.php">DASHBOARD</a></small>
+  </div>
+  
 </body>
 </html>
+<?php
+include_once('templates/footer.php')
+?>
