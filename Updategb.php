@@ -10,8 +10,11 @@ $guest = mysqli_fetch_assoc($data);
 if (isset($_POST['update'])) {
   $nama = $_POST['nama'];
   $alamat = $_POST['alamat'];
-  $email = $_POST['email'];
-  mysqli_query($conn, "UPDATE bukutamu SET Nama='$nama', Alamat='$alamat', Email='$email' WHERE id='$id'");
+  $tanggal = $_POST['tanggal'];
+  $nomor = $_POST['no'];
+  $bertemu = $_POST['bertemu'];
+  $kepentingan = $_POST['kepentingan'];
+  mysqli_query($conn, "UPDATE bukutamu SET Nama='$nama', Alamat='$alamat', Tanggal='$tanggal', no_hp='$nomor', bertemu='$bertemu', kepentingan='$kepentingan' WHERE id='$id'");
   echo "<script>alert('Data berhasil diupdate');window.location='readgb.php';</script>";
 }
 ?>
@@ -33,8 +36,20 @@ if (isset($_POST['update'])) {
       <input type="text" name="alamat" value="<?php echo $guest['Alamat']; ?>">
     </div>
     <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" value="<?php echo $guest['Email']; ?>">
+      <label for="tanggal">Tanggal</label>
+      <input type="text" name="tanggal" value="<?php echo $guest['Tanggal']; ?>">
+    </div>
+    <div>
+      <label for="no">No. Hp</label>
+      <input type="text" name="no" value="<?php echo $guest['no_hp']; ?>">
+    </div>
+    <div>
+      <label for="bertemu">Bertemu</label>
+      <input type="text" name="bertemu" value="<?php echo $guest['bertemu']; ?>">
+    </div>
+    <div>
+      <label for="kepentingan">Kepentingan</label>
+      <input type="text" name="kepentingan" value="<?php echo $guest['kepentingan']; ?>">
     </div>
     <button type="submit" name="update">Update</button>
     <a href="readgb.php">Kembali</a>
