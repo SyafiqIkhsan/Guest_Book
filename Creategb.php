@@ -1,3 +1,6 @@
+<?php
+include_once('templates/header.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,5 +48,7 @@
   }
   ?>
 </body>
-
 </html>
+<?php
+include_once('templates/footer.php')
+?>
