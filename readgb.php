@@ -1,6 +1,3 @@
-<?php
-include_once('templates/header.php')
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,13 +30,7 @@ include_once('templates/header.php')
    while ($guest = mysqli_fetch_assoc($data)):
   ?>
     <tr>
-      <td><?php echo $no++; ?></td>
-      <td><?php echo $guest['Nama']?></td>
-      <td><?php echo $guest['Alamat']?></td>
-      <td><?php echo $guest['Tanggal']?></td>
-      <td><?php echo $guest['no_hp']?></td>
-      <td><?php echo $guest['bertemu']?></td>
-      <td><?php echo $guest['kepentingan']?></td>
+      
       <td>
           <a href="Updategb.php?id=<?php echo $guest['Id']?>">Edit</a> |
           <a href="readgb.php?hapus=<?php echo $guest['Id']?>" name="hapus" onclick="return confirm('Yakin hapus?')">Hapus</a>
@@ -65,6 +56,3 @@ if (isset($_GET['hapus'])) {
   
 </body>
 </html>
-<?php
-include_once('templates/footer.php')
-?>

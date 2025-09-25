@@ -9,7 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blank</title>
+    <title>Buku Tamu</title>
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -137,7 +139,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Syafiq Ikhsan</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
