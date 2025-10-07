@@ -1,3 +1,7 @@
+<?php
+include_once('templates/header.php');
+require_once('function.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,3 +60,6 @@ if (isset($_GET['hapus'])) {
   
 </body>
 </html>
+<?php
+include_once('templates/footer.php');
+?>
